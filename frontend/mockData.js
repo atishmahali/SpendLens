@@ -1,0 +1,55 @@
+export const USER_ID = "mock_user_1";
+
+const o = (id, app, date, amt, items) => ({ id, user_id: USER_ID, app_name: app, order_date: date, total_amount: amt, items });
+const c = (id, oid, cat, sub, amt) => ({ id, order_id: oid, category: cat, subcategory: sub, amount: amt });
+
+export const orders = [
+  o("o1","Zomato","2026-02-18T13:30:00Z",450,[{name:"Hyderabadi Chicken Biryani",qty:1,price:450}]),
+  o("o2","Zomato","2026-02-17T20:15:00Z",350,[{name:"Margherita Pizza",qty:1,price:350}]),
+  o("o3","Zomato","2026-02-16T12:45:00Z",180,[{name:"McAloo Tikki Burger",qty:1,price:180}]),
+  o("o4","Zomato","2026-02-14T21:00:00Z",580,[{name:"Mutton Biryani",qty:1,price:580}]),
+  o("o5","Zomato","2026-02-12T19:30:00Z",520,[{name:"Farmhouse Pizza Large",qty:1,price:520}]),
+  o("o6","Zomato","2026-02-10T13:00:00Z",280,[{name:"Chicken Maharaja Mac",qty:1,price:280}]),
+  o("o7","Zomato","2026-02-08T20:30:00Z",420,[{name:"Paneer Butter Masala",qty:1,price:300},{name:"Butter Naan",qty:2,price:120}]),
+  o("o8","Zomato","2026-02-05T09:15:00Z",150,[{name:"Masala Dosa",qty:1,price:150}]),
+  o("o9","Zomato","2026-02-03T14:00:00Z",320,[{name:"Veg Biryani",qty:1,price:320}]),
+  o("o10","Zomato","2026-02-01T21:30:00Z",520,[{name:"Butter Chicken",qty:1,price:380},{name:"Tandoori Roti",qty:4,price:140}]),
+  o("o11","Zomato","2026-01-28T19:00:00Z",480,[{name:"Peppy Paneer Pizza",qty:1,price:480}]),
+  o("o12","Zomato","2026-01-25T13:45:00Z",220,[{name:"Chole Bhature",qty:1,price:220}]),
+  o("o13","Zomato","2026-01-22T22:30:00Z",380,[{name:"Marlboro Lights",qty:1,price:380}]),
+  o("o14","Zomato","2026-01-20T13:30:00Z",250,[{name:"Veg Thali",qty:1,price:250}]),
+  o("o15","Zomato","2026-01-18T20:00:00Z",380,[{name:"Chicken Tikka",qty:1,price:380}]),
+  o("o16","Swiggy","2026-02-18T20:00:00Z",380,[{name:"Chicken Biryani",qty:1,price:380}]),
+  o("o17","Swiggy","2026-02-17T13:00:00Z",200,[{name:"Veg Burger Combo",qty:1,price:200}]),
+  o("o18","Swiggy","2026-02-15T19:45:00Z",300,[{name:"Cheese Burst Pizza",qty:1,price:300}]),
+  o("o19","Swiggy","2026-02-14T10:00:00Z",120,[{name:"Amul Taaza Milk 1L",qty:2,price:80},{name:"Britannia Bread",qty:1,price:40}]),
+  o("o20","Swiggy","2026-02-13T11:30:00Z",350,[{name:"Aashirvaad Atta 5kg",qty:1,price:350}]),
+  o("o21","Swiggy","2026-02-11T18:20:00Z",180,[{name:"Maggi Noodles 8 pack",qty:1,price:180}]),
+  o("o22","Swiggy","2026-02-09T10:45:00Z",280,[{name:"Tata Salt 1kg",qty:1,price:30},{name:"Fortune Sunflower Oil 1L",qty:1,price:170},{name:"Sugar 1kg",qty:1,price:80}]),
+  o("o23","Swiggy","2026-02-07T21:15:00Z",620,[{name:"Lucknowi Mutton Biryani",qty:1,price:620}]),
+  o("o24","Swiggy","2026-02-04T20:30:00Z",450,[{name:"Domino's Pepperoni Pizza",qty:1,price:450}]),
+  o("o25","Swiggy","2026-02-02T22:00:00Z",350,[{name:"Gold Flake Kings",qty:1,price:350}]),
+  o("o26","Swiggy","2026-01-30T22:45:00Z",320,[{name:"Classic Milds",qty:1,price:320}]),
+  o("o27","Swiggy","2026-01-27T09:30:00Z",180,[{name:"Britannia Brown Bread",qty:1,price:50},{name:"Eggs Dozen",qty:1,price:90},{name:"Amul Butter 100g",qty:1,price:40}]),
+  o("o28","Swiggy","2026-01-24T23:00:00Z",280,[{name:"Navy Cut",qty:1,price:280}]),
+  o("o29","Swiggy","2026-01-21T22:15:00Z",300,[{name:"Wills Classic",qty:1,price:300}]),
+  o("o30","Swiggy","2026-01-19T19:30:00Z",420,[{name:"Paneer Tikka Pizza",qty:1,price:420}]),
+];
+
+export const categories = [
+  c("c1","o1","Food","Biryani",450), c("c2","o2","Food","Pizza",350),
+  c("c3","o3","Food","Burger",180), c("c4","o4","Food","Biryani",580),
+  c("c5","o5","Food","Pizza",520), c("c6","o6","Food","Burger",280),
+  c("c7","o7","Food","North Indian",420), c("c8","o8","Food","South Indian",150),
+  c("c9","o9","Food","Biryani",320), c("c10","o10","Food","North Indian",520),
+  c("c11","o11","Food","Pizza",480), c("c12","o12","Food","North Indian",220),
+  c("c13","o13","Cigarettes","Marlboro",380), c("c14","o14","Food","Thali",250),
+  c("c15","o15","Food","Starters",380), c("c16","o16","Food","Biryani",380),
+  c("c17","o17","Food","Burger",200), c("c18","o18","Food","Pizza",300),
+  c("c19","o19","Groceries","Dairy & Bakery",120), c("c20","o20","Groceries","Staples",350),
+  c("c21","o21","Groceries","Instant Food",180), c("c22","o22","Groceries","Staples",280),
+  c("c23","o23","Food","Biryani",620), c("c24","o24","Food","Pizza",450),
+  c("c25","o25","Cigarettes","Gold Flake",350), c("c26","o26","Cigarettes","Classic",320),
+  c("c27","o27","Groceries","Dairy & Bakery",180), c("c28","o28","Cigarettes","Navy Cut",280),
+  c("c29","o29","Cigarettes","Wills",300), c("c30","o30","Food","Pizza",420),
+];
