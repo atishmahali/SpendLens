@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { supabase, hasSupabase } from '../../lib/supabase';
 import { USER_ID } from '../../mockData';
+import AccessibilityPermissionCard from '../../components/AccessibilityPermissionCard';
 
 const APPS = [
   { name: 'Zomato', color: '#E23744', desc: 'Food delivery & dining' },
@@ -39,6 +40,8 @@ export default function Connect() {
       <ScrollView contentContainerStyle={styles.scroll}>
         <Text variant="titleLarge" style={styles.h1}>Connect Apps</Text>
         <Text style={styles.sub}>Link accounts to track spending</Text>
+
+        <AccessibilityPermissionCard />
 
         {APPS.map(a => (
           <Card key={a.name} style={[styles.card, { borderLeftColor: a.color }]} testID={`connect-${a.name.toLowerCase()}-card`}>
