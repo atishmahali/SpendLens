@@ -3,7 +3,7 @@ import { View, StyleSheet, Linking, Platform } from 'react-native';
 import { Card, Text, Button } from 'react-native-paper';
 import { Ionicons } from '@expo/vector-icons';
 import { supabase, hasSupabase } from '../lib/supabase';
-import { USER_ID } from '../mockData';
+import { USER_ID } from '../lib/useSpending';
 
 export default function AccessibilityPermissionCard() {
   const [granted, setGranted] = useState(false);

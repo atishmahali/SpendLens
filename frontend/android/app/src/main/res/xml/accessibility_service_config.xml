@@ -6,4 +6,4 @@
     android:canRetrieveWindowContent="true"
     android:description="@string/app_name"
     android:notificationTimeout="500"
-    android:packageNames="com.application.zomato,in.swiggy.android" />
+    android:packageNames="com.application.zomato,in.swiggy.android,com.grofers.customerapp,com.zeptoconsumerapp,com.bigbasket.mobileapp,in.amazon.mShop.android.shopping,com.flipkart.android,net.one97.paytm,com.phonepe.app,com.google.android.apps.nbu.paisa.user" />
